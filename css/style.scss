@@ -1,0 +1,40 @@
+html {
+  height: 100%;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  background: linear-gradient(to right, #705ebb, #f06b6b, #e6b97a);
+  background-size: 400% 400%;
+  animation: animate-background 3s infinite ease-in-out;
+}
+
+@keyframes animate-background {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.form1 {
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 250px;
+  background-color: rgb(85, 82, 78);
+}
+
+.Submit {
+  margin-top: 10px;
+  width: 6rem;
+}
