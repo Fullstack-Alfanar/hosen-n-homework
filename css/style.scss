@@ -35,6 +35,41 @@ body {
 }
 
 .Submit {
-  margin-top: 10px;
-  width: 6rem;
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #1fe8e8;
+  background: none;
+  padding: 5px 30px;
+  border: 3px solid #1fe8e8;
+  position: relative;
+}
+
+.Submit::before,
+.Submit::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: inherit;
+  transition: all 0.8s;
+}
+.Submit::before {
+  top: -15px;
+  left: -15px;
+  border-width: 3px 0 0 3px;
+}
+.Submit::after {
+  bottom: -15px;
+  right: -15px;
+  border-width: 0 3px 3px 0;
+}
+.Submit:hover::before,
+.Submit:hover::after {
+  width: calc(100% + 27px);
+  height: calc(100% + 27px);
+}
+
+label {
+  color: #ffffff;
 }
