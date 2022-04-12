@@ -1,10 +1,13 @@
+
 //----------------- Email Check Function ----------------------
+
 function checkEmail(email) {
   let isValid = true;
   let isQuoted = false;
   let special = false;
   let at = [];
   let quotation = [];
+
 
   for (let index = 0; index < email.length; index++) {
     if (email[index] == "@") {
@@ -52,6 +55,7 @@ function checkEmail(email) {
 
   return isValid;
 }
+
 
 //------------------ Check ID Function ----------------------
 
@@ -126,3 +130,4 @@ function checkInfo() {
     alert("The Email Is Not Valid");
   } else alert("Thanks for Submit");
 }
+
