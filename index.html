@@ -1,12 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <script src="js/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form class="form1" onsubmit="checkInfo();">
+      <table>
+        <tr>
+          <td>
+            <label>Name:</label>
+          </td>
+          <td>
+            <input id="Name" name="name1" type="text" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Age:</label>
+          </td>
+          <td>
+            <input id="Age" name="age1" type="text" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>ID:</label>
+          </td>
+          <td>
+            <input id="ID" name="id1" type="text" required />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label>Email:</label>
+          </td>
+          <td>
+            <input id="Email" name="email1" type="text" required />
+          </td>
+        </tr>
+      </table>
+      <button class="Submit" value="Submit" type="submit">Submit</button>
+    </form>
+    <script src="js/script.js"></script>
+  </body>
 </html>
