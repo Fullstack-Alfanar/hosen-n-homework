@@ -25,7 +25,8 @@ to see the website please visit this [link](https://fullstack-alfanar.github.io/
 - [class17](https://github.com/Fullstack-Alfanar/hosen-n-homework/tree/class17) 
 - [class18](https://github.com/Fullstack-Alfanar/hosen-n-homework/tree/class18) 
 - [class19](https://github.com/Fullstack-Alfanar/hosen-n-homework/tree/class19) 
-- [class20](https://github.com/Fullstack-Alfanar/hosen-n-homework/tree/class20) 🟢
+- [class20](https://github.com/Fullstack-Alfanar/hosen-n-homework/tree/class20) 
+- [class21](https://github.com/Fullstack-Alfanar/hosen-n-homework/tree/class21) 🟢
 
 🔵 current main, 🟢 new
 
