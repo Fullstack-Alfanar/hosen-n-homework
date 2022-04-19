@@ -28,7 +28,9 @@ document
 
 function emailToCookies() {
   let Email = document.getElementById("Email");
-  setCookies(Email);
+  if (checkEmail(Email.value)) {
+    setCookies(Email);
+  } else alert("Invalid Email");
   Email.value = "";
 }
 function getEmailFromCookie() {
@@ -42,7 +44,13 @@ document.getElementById("loadBtn2").addEventListener("click", getPhoneCookie);
 
 function phoneToCookies() {
   let phoneNum = document.getElementById("phoneNum");
-  setCookies(phoneNum);
+  if (
+    /^[0-9]+$/.test(phoneNum.value) &&
+    Number.parseInt(phoneNum.value.length) > 3 &&
+    Number.parseInt(phoneNum.value.length) < 15
+  ) {
+    setCookies(phoneNum);
+  } else alert("Invalid Number");
   phoneNum.value = "";
 }
 
@@ -114,4 +122,58 @@ function saveToLocal() {
     searchArr.push(index.value);
     localStorage.setItem("localSt", JSON.stringify(searchArr));
   }
+}
+//------------------ email check function----------------
+function checkEmail(email) {
+  let isValid = true;
+  let isQuoted = false;
+  let special = false;
+  let at = [];
+  let quotation = [];
+
+  for (let index = 0; index < email.length; index++) {
+    if (email[index] == "@") {
+      at.push(index);
+    }
+
+    if (email[index] == '"') {
+      quotation.push(index);
+    }
+  }
+  for (let i = 0; i < at[at.length - 1]; i++) {
+    if (
+      email[i] == "[" ||
+      email[i] == "]" ||
+      email[i] == '"' ||
+      email[i] == "," ||
+      email[i] == ":" ||
+      email[i] == ";" ||
+      email[i] == "<" ||
+      email[i] == ">" ||
+      email[i] == "(" ||
+      email[i] == ")" ||
+      email[i] == "\\" ||
+      email[i] == " "
+    ) {
+      special = true;
+    }
+  }
+  for (let i = at[at.length - 1]; i < email.length; i++) {
+    if (email[i] == "_") isValid = false;
+  }
+
+  if (
+    quotation[0] == 0 &&
+    at[at.length - 1] - 1 == quotation[quotation.length - 1]
+  ) {
+    isQuoted = true;
+  }
+
+  if (at.length != 1 && !isQuoted) {
+    isValid = false;
+  }
+  if (special && !isQuoted) isValid = false;
+  if (at[at.length - 1] >= 63) isValid = false;
+
+  return isValid;
 }
