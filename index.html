@@ -1,12 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <script src="js/script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="container">
+      <h3>Save you information to cookies</h3>
+
+      <div class="inputDiv">
+        <input id="Email" type="Email" placeholder="Enter Email" />
+        <button id="saveBtn1">Save</button>
+        <button id="loadBtn1">Load</button>
+      </div>
+      <div class="inputDiv">
+        <input id="phoneNum" type="Email" placeholder="Enter Phone Number" />
+        <button id="saveBtn2">Save</button>
+        <button id="loadBtn2">Load</button>
+      </div>
+      <div>
+        <h3>Save you information to local storage</h3>
+        <table>
+          <tr>
+            <td><label>Full Name:</label></td>
+            <td><input id="fullName" type="text" /></td>
+          </tr>
+          <tr>
+            <td><label>Phone Number:</label></td>
+            <td><input id="phoneNumber" type="text" /></td>
+          </tr>
+          <tr>
+            <td><label>Email:</label></td>
+            <td><input id="EmailAddress" type="text" /></td>
+          </tr>
+        </table>
+        <button id="saveBtn">Save</button>
+      </div>
+      <div>
+        <h3>Save or search for value in local storage</h3>
+        <input id="searchIndex" placeholder="Enter Email" />
+        <button id="saveBtn3">Save</button>
+        <button id="searchBtn">Search</button>
+      </div>
+    </section>
+    <script src="js/storageHw.js"></script>
+  </body>
 </html>

@@ -1,0 +1,15 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100vh;
+  background-color: bisque;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  margin: 5px;
+}
