@@ -1,10 +1,11 @@
 html {
   height: 100%;
+  color: #ffffff;
 }
 
 body {
   height: 100vh;
-  background-color: bisque;
+  background-color: #171515;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,7 +21,93 @@ body {
           align-items: center;
 }
 
+.allDivIn {
+  background-color: #2c2c2c;
+  padding: 40px 60px;
+  border-radius: 30px;
+  border: 2px solid #3c67e3;
+}
+
+button,
 input {
-  margin: 5px;
+  display: inline-block;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 15px;
+  border: 2px solid #3c67e3;
+  border-radius: 5px;
+  background: none;
+  margin: 2px;
+}
+
+button:hover {
+  -webkit-animation: Tale 1s infinite;
+          animation: Tale 1s infinite;
+}
+
+@-webkit-keyframes Tale {
+  0% {
+    -webkit-box-shadow: 0 0 10px #5ddcff, 0 0 20px #4e00c2;
+            box-shadow: 0 0 10px #5ddcff, 0 0 20px #4e00c2;
+  }
+}
+
+@keyframes Tale {
+  0% {
+    -webkit-box-shadow: 0 0 10px #5ddcff, 0 0 20px #4e00c2;
+            box-shadow: 0 0 10px #5ddcff, 0 0 20px #4e00c2;
+  }
+}
+
+h3 {
+  text-transform: uppercase;
+  line-height: 30px;
+  color: #3c67e3;
+}
+
+.h3Span {
+  display: block;
+  opacity: 0;
+  -webkit-animation: h3SpanAnimation 5s forwards;
+          animation: h3SpanAnimation 5s forwards;
+}
+
+.first-title {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+.secund-title {
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.third-title {
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+}
+
+@-webkit-keyframes h3SpanAnimation {
+  from {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
+}
+
+@keyframes h3SpanAnimation {
+  from {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
