@@ -3,14 +3,13 @@ function setCookies(x) {
   const d = new Date();
   d.setTime(d.getTime() + 24 * 60 * 60 * 1000);
   let expires = "expires=" + d.toUTCString();
-  document.cookie = x.id + "=" + x.value + ";" + expires + ";path=/";
+  document.cookie = x.id + "=" + x.value + ";" + expires;
 }
 
-function getCookies(x) {
+function getCookies(x) {                                                                                                                                                                                                                                                                                       
   if (document.cookie.valueOf(x)) {
-    let value = `${document.cookie}`;
+    let value = document.cookie;
     let parts = value.split(/=|;| /);
-    console.log(x);
     for (let i = 0; i < parts.length; i++) {
       if (parts[i] == x) {
         alert(parts[i + 1]);
