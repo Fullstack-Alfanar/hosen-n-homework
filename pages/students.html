@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/students/students.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div><h1>Students Score</h1></div>
+    <div class="Container">
+      <div class="inputDiv">
+        <input id="Name" type="text" placeholder="Name" />
+        <input id="grade" type="text" placeholder="grade" />
+        <input id="Photo" type="text" placeholder="Photo" />
+        <button class="submitButton" onclick="CheckValidElement()">Submit</button>
+      </div>
+      <div class="midDiv">
+        <div class="midDiv1">
+          <label>Average: <span id="avg"></span></label>
+        </div>
+        <div class="midDiv1">
+          <label>Students counter: <span id="cnt"></span></label>
+        </div>
+      </div>
+      <div class="stdDiv">
+        <table>
+          <thead>
+            <tr>
+              <td>
+                <div class="stdDiv1"><label>Student Name</label></div>
+              </td>
+              <td>
+                <div class="stdDiv1"><label>Score</label></div>
+              </td>
+              <td>
+                <div class="stdDiv1"><label>Time</label></div>
+              </td>
+              <td>
+                <div class="stdDiv1"><label>Photo</label></div>
+              </td>
+            </tr>
+          </thead>
+          <tbody id="Tbodyy"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="/js/student.js"></script>
+  </body>
+</html>

@@ -1,0 +1,163 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+html {
+  height: 100%;
+  color: #ffffff;
+}
+
+h1 {
+  text-align: center;
+  background-color: #f0b976;
+  -webkit-animation: h1Color 5s infinite;
+          animation: h1Color 5s infinite;
+}
+
+@-webkit-keyframes h1Color {
+  0% {
+    color: #00cc99;
+  }
+  50% {
+    color: #5c4cb9;
+  }
+  100% {
+    color: #00cc99;
+  }
+}
+
+@keyframes h1Color {
+  0% {
+    color: #00cc99;
+  }
+  50% {
+    color: #5c4cb9;
+  }
+  100% {
+    color: #00cc99;
+  }
+}
+
+body {
+  background-color: #2c2c2c;
+}
+
+.Container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.inputDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input {
+  margin: 10px;
+  padding: 5px;
+  width: 120px;
+  height: 20px;
+  border-radius: 5px;
+  border: 3px solid #f0b976;
+}
+
+.midDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.midDiv1 {
+  width: 200px;
+  padding: 20px 50px;
+  border: 3px solid #f0b976;
+}
+
+.stdDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+  border: 3px solid #f0b976;
+}
+
+.stdDiv table {
+  width: 100%;
+}
+
+.stdDiv1 {
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.tdDivider {
+  border-top: 2px solid #f0b976;
+}
+
+td {
+  width: 25%;
+}
+
+.submitButton {
+  margin-top: 20px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #f0b976;
+  background: none;
+  padding: 5px 30px;
+  margin: 20px;
+  border: 3px solid #f0b976;
+  position: relative;
+}
+
+.submitButton::before,
+.submitButton::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: inherit;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.submitButton::before {
+  top: -15px;
+  left: -15px;
+  border-width: 3px 0 0 3px;
+}
+
+.submitButton::after {
+  bottom: -15px;
+  right: -15px;
+  border-width: 0 3px 3px 0;
+}
+
+.submitButton:hover::before,
+.submitButton:hover::after {
+  width: calc(100% + 27px);
+  height: calc(100% + 27px);
+}
+
+img {
+  width: 120px;
+}
+/*# sourceMappingURL=students.css.map */
